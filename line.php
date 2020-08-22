@@ -44,6 +44,9 @@ if ( sizeof($request_array['events']) > 0 )
 // 		     $reply_message = '<br>';
 // 		     $reply_message += 'รักษาหาย '. $obj->{'Recovered'};
 		  }
+	   	if($text == "ใครคือผู้พัฒนา" || $text == "ผู้พัฒนา"){
+			$reply_message = 'ผู้พัฒนาคือ ภาคภูมิ ชุ่มกมล 61160189';
+		}
    }
    else
     $reply_message = 'ระบบได้รับ '.ucfirst($event['message']['type']).' ของคุณแล้ว';
