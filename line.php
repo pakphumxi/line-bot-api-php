@@ -47,6 +47,10 @@ if ( sizeof($request_array['events']) > 0 )
 	   	if($text == "ใครคือผู้พัฒนา" || $text == "ผู้พัฒนา"){
 			$reply_message = 'ผู้พัฒนาคือ ภาคภูมิ ชุ่มกมล 61160189';
 		}
+	   	if($text == "CDMA"){
+			$reply_message = '1,-3,-1,-1';
+		}
+	   	
    }
    else
     $reply_message = 'ระบบได้รับ '.ucfirst($event['message']['type']).' ของคุณแล้ว';
